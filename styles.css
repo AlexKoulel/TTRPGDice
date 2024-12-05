@@ -1,0 +1,115 @@
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url("Images/rpg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: fadeIn 1s forwards;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin:0;
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+}
+
+.container{
+    min-height: 100vh;
+    height: 90%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #655ba4;
+    text-shadow: 3px 3px 5px rgba(2, 2, 2, 0.8); 
+}
+
+#result-text{
+    font-size: 100px;
+    margin-bottom: 50px;
+    color:#655ba4;
+    opacity: 0;
+    text-shadow: 3px 3px 5px rgba(2, 2, 2, 0.8); 
+    animation: fadeIn 1s forwards;
+}
+
+.fadeIn{
+    animation: fadeIn 1s forwards;
+}
+select:enabled, button:enabled{
+    font-size: 18px;
+    padding: 5px;
+    margin-top: 20px;
+    background-color: #655ba4;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-shadow: 3px 3px 5px rgba(2, 2, 2, 0.8); 
+    width: 100%;
+}
+select:disabled, button:disabled{
+    font-size: 18px;
+    padding: 5px;
+    margin-top: 20px;
+    background-color: #655ba4;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-shadow: 3px 3px 5px rgba(2, 2, 2, 0.8); 
+    width: 100%;
+    cursor: not-allowed; 
+    opacity: 0.4; 
+}
+
+select:focus, button:focus {
+    outline: none;
+}
+
+select:hover, button:hover {
+    background-color: #655ba4;
+}
+
+.footer{
+    position: absolute;
+    text-align: center;
+    bottom:0px;
+    left: 0;
+    width: 100%;
+    cursor: pointer;
+    text-shadow: 3px 3px 5px rgba(2, 2, 2, 0.8); 
+}
+footer a {
+    color: #ffb3b3;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 600px) {
+    .footer {
+        display: none;
+    }
+}
